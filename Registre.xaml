@@ -1,0 +1,41 @@
+﻿<Window x:Class="FaceTrackingBasics.Registre"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Registre" Height="356" Width="494" ResizeMode="CanMinimize" Closed="WindowClosed" Loaded="WindowLoaded">
+    <Grid>
+        <Grid Name="formulari">
+            <Label Content="Nom" Margin="25,43,377,243" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txNom" VerticalContentAlignment="Center" TextAlignment="Left" TextWrapping="Wrap" Margin="116,43,40,243">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <Label Content="Cognom" Margin="25,113,377,173"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <TextBox Name="txCognom" VerticalContentAlignment="Center" TextAlignment="Left"  TextWrapping="Wrap" Margin="116,113,40,173">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <Label Content="Nº Història" Margin="25,183,377,103" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <TextBox Name="txHistoria" VerticalContentAlignment="Center" TextAlignment="Left"  TextWrapping="Wrap" Margin="116,183,40,103">
+                <TextBox.Effect>
+                    <DropShadowEffect/>
+                </TextBox.Effect>
+            </TextBox>
+            <Button x:Name="bFoto" Content="Prendre Foto" HorizontalAlignment="Left" Margin="358,258,0,36" Width="90" Click="bFoto_Click"/>
+        </Grid>
+
+        <Grid Name="foto" Background="Black">
+            <Image Name="VideoControl"/>
+            <Grid Name="mira" Margin="121,-23,84,102">
+                <Polyline Points="50,90,50,50,90,50" Name="topLeft" Width="200" Height="200" Stroke="Red" StrokeThickness="4" Margin="10,10,73,39" />
+                <Polyline Points="100,50,140,50,140,90" Name="topRight" Width="200" Height="200" Stroke="Red" StrokeThickness="4" Margin="73,10,10,39" />
+                <Polyline Points="100,140,140,140,140,100" Name="bottonRight" Width="200" Height="200" Stroke="Red" StrokeThickness="4" Margin="73,39,10,10" />
+                <Polyline Points="50,100,50,140,90,140" Name="bottonLeft" Width="200" Height="200" Stroke="Red" StrokeThickness="4" Margin="10,39,73,10" />
+            </Grid>
+            <Button x:Name="bPrendreFoto" Content="Prendre Foto" HorizontalAlignment="Left" Margin="35,0,0,56" Width="106" Click="bPrendreFoto_Click" Height="33" VerticalAlignment="Bottom" IsEnabled="False"/>
+            <CheckBox Name="seated" Foreground="GreenYellow" Content="Mode Assegut" IsChecked="True" Click="asegutClic" HorizontalAlignment="Left" Margin="35,0,0,35" VerticalAlignment="Bottom" Width="106"/>
+            <Slider HorizontalAlignment="Left" Name="slider1" Foreground="Red" Orientation="Vertical" Maximum="27" Minimum="-27" Interval="2" SmallChange="2" IsSnapToTickEnabled="True" ValueChanged="slider1_ValueChanged" Margin="71,26,0,102" />
+        </Grid>
+    </Grid>
+</Window>
