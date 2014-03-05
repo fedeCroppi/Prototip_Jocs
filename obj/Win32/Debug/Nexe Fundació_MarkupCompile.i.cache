@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-A:\Proyecto\FaceTrackingNexeJocs\obj\Win32\Debug\
+A:\Proyecto\Nexe\obj\Win32\Debug\
 FaceTrackingBasics
 none
 false
 DEBUG;TRACE
-A:\Proyecto\FaceTrackingNexeJocs\App.xaml
+A:\Proyecto\Nexe\App.xaml
 5-1096447454
 18-178176747
 15-1965038285
-17-2098168583
+17-1448345414
 Joc1.xaml;Joc2.xaml;Joc3.xaml;MainWindow.xaml;Registre.xaml;
 
 True

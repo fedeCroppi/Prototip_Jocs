@@ -129,3 +129,7 @@ A:\Proyecto\FaceTrackingNexeJocs\bin\x86\Debug\Nexe Fundació.exe.config
 A:\Proyecto\FaceTrackingNexeJocs\obj\Win32\Debug\FaceTrackingBasics-WPF.csproj.ResolveComReference.cache
 A:\Proyecto\FaceTrackingNexeJocs\obj\Win32\Debug\Nexe Fundació.exe
 A:\Proyecto\FaceTrackingNexeJocs\obj\Win32\Debug\Nexe Fundació.pdb
+A:\Proyecto\Nexe\bin\x86\Debug\Nexe Fundació.exe.config
+A:\Proyecto\Nexe\obj\Win32\Debug\FaceTrackingBasics-WPF.csproj.ResolveComReference.cache
+A:\Proyecto\Nexe\obj\Win32\Debug\Nexe Fundació.exe
+A:\Proyecto\Nexe\obj\Win32\Debug\Nexe Fundació.pdb
