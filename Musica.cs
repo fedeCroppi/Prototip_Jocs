@@ -86,5 +86,14 @@ namespace FaceTrackingBasics
         {
             this.output.Volume = volume;
         }
+
+        /// <summary>
+        /// comprova el estat del reproductor
+        /// </summary>
+        /// <returns>si esta en reproduccio</returns>
+        public bool isPlaying()
+        {
+            return this.output.PlaybackState == PlaybackState.Playing;
+        }
     }
 }

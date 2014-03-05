@@ -43,9 +43,6 @@ namespace FaceTrackingBasics
         //so
         private string[] path;
         private Musica music;
-        private WaveOut wav;
-        private SineWaveOscillator oscilador;
-        private PlaybackState state;
 
         // mida de la pantalla
         private double width, height, scrollWidth, scrollHeight;
@@ -57,10 +54,6 @@ namespace FaceTrackingBasics
         {
             InitializeComponent();
             this.mw = mw;
-
-            this.wav = new WaveOut();
-            this.oscilador = new SineWaveOscillator(4400);
-            this.wav.Init(oscilador);
 
             this.skeletonDataPle = obrirSkeletons(player);
             //mides de pantalla
@@ -173,23 +166,13 @@ namespace FaceTrackingBasics
                     {
                         scrollViewer.ScrollToHorizontalOffset(scrollViewer.HorizontalOffset + this.width);
                         MyStoryboard.Storyboard.Begin();
-                        oscilador.Amplitude = (short)(scrollViewer.HorizontalOffset + 4000);
-                        oscilador.Frequency = scrollViewer.HorizontalOffset;
-
-                        state = wav.PlaybackState;
-                        wav.Play();
-
-                        Thread t = new Thread(new ThreadStart(ThreadProc));
-                        t.Start();
+                        if (!music.isPlaying())
+                        {
+                            music.next();
+                        }
                     }
                 }
             }
-        }
-
-        public void ThreadProc()
-        {
-            Thread.Sleep(500);
-            wav.Stop();
         }
 
         private void WindowLoaded(object sender, RoutedEventArgs e)
