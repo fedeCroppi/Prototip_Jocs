@@ -4,8 +4,4 @@
     <foto nom="" />
     <skeleton nom="" />
   </player>
-  <player nom="fede" cognom="croppi" nHistoria="asdas343422432">
-    <foto nom="A:\Proyecto\Nexe\bin\x86\Debug\Jugadors\croppi_fede.jpg" />
-    <skeleton nom="A:\Proyecto\Nexe\bin\x86\Debug\Jugadors\croppi_fede.skd" />
-  </player>
 </players>
